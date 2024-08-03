@@ -1,0 +1,180 @@
+body {
+    font-family: Gabriola;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 71px;
+    background-color: #f1eeea;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 40px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #a7815a;
+    font-size: 22px;
+    padding:  0 20px;
+    line-height: 71px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #a7815a;
+    color: #f1eeea; 
+}
+
+#navbar.scrolled {
+    background-color: #a7815a;
+}
+
+#navbar.scrolled ul li a {
+    color: #f1eeea;
+}
+
+#navbar.scrolled ul li a:hover {
+    color: #f1eeea;
+    background-color: #f1eeea;
+    color: #a7815a;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+#home {
+    background-image: url(hb.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    background-image: url(introb.png);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+.profile-photo {
+    border-radius: 1%;
+    width: 245px;
+    height: 340px; 
+}
+
+.text {
+    max-width: 250px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#about, #skills, #trainings {
+    background: #fff;
+    padding: 100px 20px;
+}
+
+#projects, #contact {
+    background: #fff;
+    padding: 50px 30px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    align-items: center; 
+}
+
+.section-title {
+    font-weight: bold;  
+    padding-right: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+.section-content {
+    margin-top: 20px;
+    gap: 15px; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.detail-image {
+    width: 80px; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.section-content p {
+    margin: 0;
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#skills ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdfaf6;
+    background-color: #c1986e;
+    margin: 20px 40px 20px;
+    padding: 15px;
+    width: 10%;
+    border-radius: 5px;
+}
+.githublink {
+    background-color: #a7815a;
+    color: #fdfaf6;
+    padding: 10px 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link {
+    color: #c1986e;
+    text-decoration: none;
+}
